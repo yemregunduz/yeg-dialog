@@ -1,6 +1,6 @@
 # YEG DIALOG
 
-![Screenshot 2023-07-31 001312](https://github.com/yemregunduz/yeg-dialog/assets/81508248/a777056d-699f-413d-bdfc-664b6bcb461a)
+![Screenshot 2023-07-31 001312](https://github.com/yemregunduz/yeg-dialog/assets/81508248/955649b3-a99b-46a7-878d-3fa3a742c3e1)
 
 ## Dialog Types
 
