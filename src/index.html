@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./dialog.js"></script>
+    <link rel="stylesheet" href="dialog.css" />
+</head>
+
+<body>
+    <div class="btn-container">
+        <button class="btn btn-primary btn-animate" data-toggle="dialog" data-target="#defaultDialog">
+            Open Default Dialog
+        </button>
+        <button class="btn btn-primary btn-animate" data-toggle="dialog" data-target="#escEventFalseDialog">
+            Open Keyboard False Dialog
+        </button>
+        <button class="btn btn-primary btn-animate" data-toggle="dialog" data-target="#staticBackdropDialog">
+            Open Static Backdrop Dialog
+        </button>
+        <button class="btn btn-primary btn-animate" data-toggle="dialog" data-target="#longContentDialog">
+            Open Long Content Dialog
+        </button>
+    </div>
+
+    <dialog id="defaultDialog" class="dialog">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <span class="dialog-header__text"><b>Default Dialog 👋</b></span>
+                <button data-dismiss="dialog" aria-label="close" class="dialog-header__close">❌</button>
+            </div>
+            <div class="dialog-body">
+                <img src="../assets/images/image.jpg">
+                <p>A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop"
+                        target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.</p>
+                <p>You can also change the styles of the <code>::backdrop</code> from the CSS.</p>
+            </div>
+            <div class="dialog-footer">
+                <button class="btn btn-danger-outline" data-dismiss="dialog">Cancel</button>
+                <button class="btn btn-primary">Confirm</button>
+
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="escEventFalseDialog" class="dialog" data-keyboard="false">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <span class="dialog-header__text"><b>Keyboard False Dialog 👋</b></span>
+                <button data-dismiss="dialog" aria-label="close" class="dialog-header__close">❌</button>
+            </div>
+            <div class="dialog-body">
+                <img src="../assets/images/image.jpg">
+                <p>
+                    The attribute that prevents this dialog from closing when pressing the escape key is called
+                    <b>data-keyboard="false"</b>.
+                </p>
+                <p>A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop"
+                        target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.</p>
+                <p>You can also change the styles of the <code>::backdrop</code> from the CSS.</p>
+            </div>
+            <div class="dialog-footer">
+                <button class="btn btn-danger-outline" data-dismiss="dialog">Cancel</button>
+                <button class="btn btn-primary">Confirm</button>
+
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="staticBackdropDialog" class="dialog" data-backdrop="static">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <span class="dialog-header__text"><b>Static Backdrop Dialog 👋</b></span>
+                <button data-dismiss="dialog" aria-label="close" class="dialog-header__close">❌</button>
+            </div>
+            <div class="dialog-body">
+                <img src="../assets/images/image.jpg">
+                <p>The feature that prevents the modal from closing when clicked outside or when the escape key is
+                    pressed
+                    is the <b>data-backdrop="static"</b> attribute.</p>
+                <p>A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop"
+                        target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.</p>
+                <p>You can also change the styles of the <code>::backdrop</code> from the CSS.</p>
+            </div>
+            <div class="dialog-footer">
+                <button class="btn btn-danger-outline" data-dismiss="dialog">Cancel</button>
+                <button class="btn btn-primary">Confirm</button>
+
+            </div>
+        </div>
+    </dialog>
+    <dialog id="longContentDialog" class="dialog">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <span class="dialog-header__text"><b>Long Content Dialog 👋</b></span>
+                <button data-dismiss="dialog" aria-label="close" class="dialog-header__close">❌</button>
+            </div>
+            <div class="dialog-body">
+                <img src="../assets/images/image.jpg">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu eros convallis, consectetur dui et, interdum risus. Nunc at lobortis est, sit amet sodales elit. Maecenas euismod eros eget dolor tincidunt, ac tristique quam consequat. Integer elementum, leo a fringilla pharetra, ante mi tristique lorem, at maximus diam felis non neque. Quisque aliquet mollis ex et feugiat. Donec luctus purus et enim consequat, vel ultrices turpis feugiat. In arcu ex, cursus vel rutrum vitae, ullamcorper at velit. Sed tristique sit amet tortor a dapibus. Etiam a varius leo, in consequat ipsum. Ut tincidunt arcu non tellus scelerisque, ac vulputate est volutpat.
+
+                    Pellentesque et neque sit amet erat porttitor dictum eu at metus. Cras ornare mi urna, a dapibus magna consequat a. Proin feugiat, neque id vehicula varius, diam felis tempor lacus, et consequat nunc turpis eget tortor. Integer mattis venenatis nisl, quis gravida ligula egestas quis. Curabitur hendrerit sem neque, vel rhoncus odio malesuada ac. Pellentesque non est rutrum, rhoncus eros ac, venenatis urna. Nam vel laoreet augue.
+
+                    Aliquam a eros rutrum, dictum ante ac, maximus velit. Nullam fermentum aliquet rutrum. Nullam odio lacus, tincidunt sed lacus eget, feugiat viverra felis. Sed nunc risus, commodo sed nulla sed, rhoncus faucibus ligula. Phasellus fringilla, leo quis semper ultrices, arcu est lobortis velit, et tincidunt quam enim quis ex. Donec sit amet felis viverra, faucibus arcu vel, rutrum diam. Suspendisse euismod sit amet tortor scelerisque congue. Sed fermentum tortor sapien, id pulvinar risus tristique nec. Nunc ut eros fermentum, finibus turpis nec, lacinia eros. Aenean euismod metus ex, ut eleifend quam feugiat a.
+
+                    Fusce ultricies nisl nunc, sit amet pulvinar nunc tincidunt placerat. Duis blandit, orci non luctus auctor, lectus orci congue mauris, vel congue ipsum orci id nisl. Cras non odio tellus. Sed porttitor nisi quis dolor hendrerit sagittis. Aliquam sodales blandit est quis tempus. Aliquam condimentum augue ut vulputate tristique. Phasellus non iaculis dui. Proin sagittis luctus enim non imperdiet. Nam ut tortor ac dui vulputate ullamcorper et ut justo. Praesent leo arcu, faucibus eget nisl at, condimentum aliquet ex. Phasellus suscipit, dui non vehicula dapibus, sem est placerat diam, ac varius metus sapien in lorem. Cras porta risus feugiat rutrum hendrerit.
+
+                    Duis suscipit consequat purus ut aliquam. Nulla pulvinar semper purus a aliquam. Nam sollicitudin elementum sodales. Etiam arcu dolor, dapibus sed consequat vitae, porta id orci. Cras quis aliquet nulla, sit amet finibus nisl. Donec vehicula magna turpis, malesuada fringilla eros pellentesque posuere. Aliquam quis quam venenatis, ornare augue vel, tempor diam. Suspendisse vel congue purus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu eros convallis, consectetur dui et, interdum risus. Nunc at lobortis est, sit amet sodales elit. Maecenas euismod eros eget dolor tincidunt, ac tristique quam consequat. Integer elementum, leo a fringilla pharetra, ante mi tristique lorem, at maximus diam felis non neque. Quisque aliquet mollis ex et feugiat. Donec luctus purus et enim consequat, vel ultrices turpis feugiat. In arcu ex, cursus vel rutrum vitae, ullamcorper at velit. Sed tristique sit amet tortor a dapibus. Etiam a varius leo, in consequat ipsum. Ut tincidunt arcu non tellus scelerisque, ac vulputate est volutpat.
+
+                    Pellentesque et neque sit amet erat porttitor dictum eu at metus. Cras ornare mi urna, a dapibus magna consequat a. Proin feugiat, neque id vehicula varius, diam felis tempor lacus, et consequat nunc turpis eget tortor. Integer mattis venenatis nisl, quis gravida ligula egestas quis. Curabitur hendrerit sem neque, vel rhoncus odio malesuada ac. Pellentesque non est rutrum, rhoncus eros ac, venenatis urna. Nam vel laoreet augue.
+
+                    Aliquam a eros rutrum, dictum ante ac, maximus velit. Nullam fermentum aliquet rutrum. Nullam odio lacus, tincidunt sed lacus eget, feugiat viverra felis. Sed nunc risus, commodo sed nulla sed, rhoncus faucibus ligula. Phasellus fringilla, leo quis semper ultrices, arcu est lobortis velit, et tincidunt quam enim quis ex. Donec sit amet felis viverra, faucibus arcu vel, rutrum diam. Suspendisse euismod sit amet tortor scelerisque congue. Sed fermentum tortor sapien, id pulvinar risus tristique nec. Nunc ut eros fermentum, finibus turpis nec, lacinia eros. Aenean euismod metus ex, ut eleifend quam feugiat a.
+
+                    Fusce ultricies nisl nunc, sit amet pulvinar nunc tincidunt placerat. Duis blandit, orci non luctus auctor, lectus orci congue mauris, vel congue ipsum orci id nisl. Cras non odio tellus. Sed porttitor nisi quis dolor hendrerit sagittis. Aliquam sodales blandit est quis tempus. Aliquam condimentum augue ut vulputate tristique. Phasellus non iaculis dui. Proin sagittis luctus enim non imperdiet. Nam ut tortor ac dui vulputate ullamcorper et ut justo. Praesent leo arcu, faucibus eget nisl at, condimentum aliquet ex. Phasellus suscipit, dui non vehicula dapibus, sem est placerat diam, ac varius metus sapien in lorem. Cras porta risus feugiat rutrum hendrerit.
+
+                    Duis suscipit consequat purus ut aliquam. Nulla pulvinar semper purus a aliquam. Nam sollicitudin elementum sodales. Etiam arcu dolor, dapibus sed consequat vitae, porta id orci. Cras quis aliquet nulla, sit amet finibus nisl. Donec vehicula magna turpis, malesuada fringilla eros pellentesque posuere. Aliquam quis quam venenatis, ornare augue vel, tempor diam. Suspendisse vel congue purus.
+                </p>
+            </div>
+            <div class="dialog-footer">
+                <button class="btn btn-danger-outline" data-dismiss="dialog">Cancel</button>
+                <button class="btn btn-primary">Confirm</button>
+
+            </div>
+        </div>
+    </dialog>
+</body>
+
+</html>
